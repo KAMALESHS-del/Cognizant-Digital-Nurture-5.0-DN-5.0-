@@ -1,0 +1,26 @@
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+class GradeCalculator:
+    def calculate_grade(self, marks):
+        if marks >= 90:
+            return "A"
+        elif marks >= 75:
+            return "B"
+        else:
+            return "C"
+class DatabaseManager:
+    def save_to_database(self, student):
+        print(f"Saving {student.name} to database")
+class ReportGenerator:
+    def generate_report(self, student, grade_calculator):
+        print(f"Student: {student.name}")
+        print(f"Grade: {grade_calculator.calculate_grade(student.marks)}")
+student = Student("Kamalesh", 85)
+grade_calculator = GradeCalculator()
+database_manager = DatabaseManager()
+report_generator = ReportGenerator()
+
+database_manager.save_to_database(student)
+report_generator.generate_report(student, grade_calculator)
