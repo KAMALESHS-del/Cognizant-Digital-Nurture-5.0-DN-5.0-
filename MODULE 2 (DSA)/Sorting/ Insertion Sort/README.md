@@ -9,9 +9,9 @@ Insert it into its correct position among the already sorted cards.
 
 
          "Algorithm"
-Assume the first element is already sorted.
-Pick the next element (key).
-Compare it with the sorted part.
-Shift larger elements one position to the right.
-Insert the key into its correct position.
-Repeat until the array is sorted.
+       1.Assume the first element is already sorted.
+       2.Pick the next element (key).
+       3.Compare it with the sorted part.
+       4.Shift larger elements one position to the right.
+       5.Insert the key into its correct position.
+       6.Repeat until the array is sorted.
