@@ -26,3 +26,22 @@ Better organization of records
 | **Heap Sort**      | Priority queues, CPU scheduling, task scheduling                  | Guaranteed O(n log n) and in-place             |
 | **Counting Sort**  | Student marks, ages, IDs (small integer ranges)                   | Very fast for limited-range integers           |
 | **Radix Sort**     | Phone numbers, ZIP codes, employee IDs                            | Efficient for fixed-length integers or strings |
+
+
+**Sorting Algorithms Complexity Table**
+| Algorithm | Best       | Average    | Worst      | Space    |
+| --------- | ---------- | ---------- | ---------- | -------- |
+| Bubble    | O(n)       | O(n²)      | O(n²)      | O(1)     |
+| Selection | O(n²)      | O(n²)      | O(n²)      | O(1)     |
+| Insertion | O(n)       | O(n²)      | O(n²)      | O(1)     |
+| Merge     | O(n log n) | O(n log n) | O(n log n) | O(n)     |
+| Quick     | O(n log n) | O(n log n) | O(n²)      | O(log n) |
+| Heap      | O(n log n) | O(n log n) | O(n log n) | O(1)     |
+| Counting  | O(n+k)     | O(n+k)     | O(n+k)     | O(n+k)   |
+| Radix     | O(d(n+k))  | O(d(n+k))  | O(d(n+k))  | O(n+k)   |
+
+##Memory Tip##
+Bubble, Selection, Insertion → Simple but slow (O(n²))
+Merge, Quick, Heap → Efficient comparison sorts (O(n log n))
+Counting, Radix → Special-purpose linear-time sorts (non-comparison based).
+
